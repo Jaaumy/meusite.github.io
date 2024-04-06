@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morfeu Hotel | Alugar quarto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesalugar.css"> <!-- Importe o arquivo CSS principal -->
+</head>
+<body>
+        <!-- Imagem de fundo cortada -->
+        <div class="imagem-cortada"></div>
+        <!-- Título centrado no topo -->
+    <h1 class="titulo">Morfeu Hotel | Alugar quarto</h1>
+    <br><br><br><br><br><br>
+    <!-- Botão moderno para reservar quarto -->
+    <button class="botao-reservar" onclick="openModal()">Reservar quarto</button>
+
+    <!-- Mini janela para quartos disponíveis -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 class="titulo-mini-janela">Quartos Disponíveis</h2>
+            
+            <!-- Tabela para Quarto Comum -->
+            <table class="tabela-quarto">
+                <caption>Quarto Comum</caption>
+                <tr>
+                    <th>Características</th>
+                    <td>1 cama de casal, banheiro privativo</td>
+                </tr>
+                <tr>
+                    <th>Preço</th>
+                    <td>R$ 100,00 por noite</td>
+                </tr>
+            </table>
+            
+            <!-- Tabela para Quarto Deluxe -->
+            <table class="tabela-quarto">
+                <caption>Quarto Deluxe</caption>
+                <tr>
+                    <th>Características</th>
+                    <td>2 camas de solteiro, vista panorâmica, serviço de quarto 24 horas</td>
+                </tr>
+                <tr>
+                    <th>Preço</th>
+                    <td>R$ 300,00 por noite</td>
+                </tr>
+            </table>
+            
+            <!-- Tabela para Quarto Presidencial -->
+            <table class="tabela-quarto">
+                <caption>Quarto Presidencial</caption>
+                <tr>
+                    <th>Características</th>
+                    <td>1 cama king-size, banheira de hidromassagem, varanda privativa</td>
+                </tr>
+                <tr>
+                    <th>Preço</th>
+                    <td>R$ 500,00 por noite</td>
+                </tr>
+            </table>
+            
+            <!-- Botão moderno para fechar a mini janela -->
+            <button class="botao-fechar" onclick="closeModal()">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Botão moderno para voltar à página inicial -->
+    <button class="botao-voltar" onclick="window.location.href='index.html'">Voltar</button>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Direitos reservados | Morfeu Hotel</p>
+        </div>
+    </footer>
+    <script src="scriptalugar.js"></script> <!-- Importe o arquivo JavaScript -->
+</body>
+</html>
